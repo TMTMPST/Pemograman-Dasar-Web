@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #949090;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container{
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sidebar1{
+    text-align: center;
+    padding: 100px;
+}
+
