@@ -15,7 +15,7 @@ function validateForm() {
         alert("Tanggal Lahir harus diisi.")
         return false;
     }
-    if (centang => 1) {
+    if (centang > 1) {
         alert("silahkan Centang dulu")
         return false;
     }
