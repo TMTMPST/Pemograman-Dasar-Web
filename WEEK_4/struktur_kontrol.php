@@ -21,6 +21,7 @@ while ($jarakSaatIni < $jarakTarget) {
     $hari++;
 }
 
+echo "<br>";
 echo "Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
 
 $jumlahLahan = 10;
@@ -90,6 +91,6 @@ echo "Harga yang harus dibayar: $hargaAkhir";
 $poin = 600;
 
 echo "<br><br>";
-echo "Total skor pemain adalah: $poin <br>";
+echo "Total skor pemain : $poin <br>";
 echo "Apakah pemain mendapatkan hadiah tambahan? " . ($poin > 500 ? 'YA' : 'TIDAK');
 ?>
