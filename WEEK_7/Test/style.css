@@ -1,0 +1,26 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: #6c757d;
+}
+
+#resultContainer {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+}

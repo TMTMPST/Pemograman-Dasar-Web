@@ -14,4 +14,3 @@
         echo "Variabel 'nama' tidak ditemukan dalam array";
     }
 ?>
-
