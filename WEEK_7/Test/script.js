@@ -1,28 +1,30 @@
-function generateList() {
-    const numEntries = document.getElementById('numEntries').value;
-    const listContainer = document.getElementById('listContainer');
-    listContainer.innerHTML = '';
 
-    for (let i = 0; i < numEntries; i++) {
-        const entryDiv = document.createElement('div');
-        entryDiv.className = 'mb-3';
-        entryDiv.innerHTML = `
-            <div class="row">
-                <div class="col">
-                    <input type="text" class="form-control" name="firstName${i}" placeholder="Nama Anda" required>
+function updateNumberInput() {
+    const slider = document.getElementById('numFields');
+    const numberInput = document.getElementById('numFieldsNumber');
+    numberInput.value = slider.value;  
+}
+function updateNumFieldsDisplay() {
+    const numFields = document.getElementById('numFields').value;
+    document.getElementById('numFieldsDisplay').textContent = numFields;
+}
+function generateFields() {
+    const numFields = document.getElementById('numFields').value;
+    const container = document.getElementById('fieldsContainer');
+    container.innerHTML = '';s
+
+    for (let i = 1; i <= numFields; i++) {
+        container.innerHTML += `
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="name${i}" class="form-label">Name ${i}</label>
+                    <input type="text" class="form-control input-box" id="name${i}" name="name[]" placeholder="First Name" required>
                 </div>
-                <div class="col">
-                    <input type="text" class="form-control" name="lastName${i}" placeholder="Waifu Anda" required>
+                <div class="col-md-6">
+                    <label for="lastName${i}" class="form-label">Last Name ${i}</label>
+                    <input type="text" class="form-control input-box" id="lastName${i}" name="lastName[]" placeholder="Last Name" required>
                 </div>
             </div>
         `;
-        listContainer.appendChild(entryDiv);
     }
-
-    document.getElementById('submitBtn').style.display = 'block';
 }
-
-window.onload = function() {
-    document.getElementById('numEntries').value = 1;
-    generateList();
-};
