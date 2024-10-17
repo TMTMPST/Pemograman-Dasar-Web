@@ -14,10 +14,8 @@
         <h2 class="text-center mb-4">Formulir</h2>
         <form id="dynamicForm" method="POST" action="process_form.php">
             <div class="mb-4">
-                <label for="numFields" class="form-label">Number of Entries: <span
-                        id="numFieldsDisplay">1</span></label>
-                <input type="range" class="form-range slider" id="numFields" name="numFields" min="1" max="100"
-                    value="1" oninput="updateNumFieldsDisplay()">
+                <label for="numFields" class="form-label">Number of Entries</label>
+                <input type="number" class="form-control" id="numFields" name="numFields" min="1" max="10" value="1">
             </div>
             <div id="fieldsContainer"></div>
             <div class="text-center mt-4">
