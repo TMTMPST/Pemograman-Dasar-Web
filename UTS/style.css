@@ -1,0 +1,147 @@
+.light-pink {
+    color: #FF6AC2;
+}
+
+.pink {
+    color: #B931FC;
+}
+
+.peach {
+    color: #FFDFD6;
+}
+
+/* navbar */
+.navbar {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Adjust this color to suit your preference */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007BFF; /* Hover color */
+}
+
+.navbar-brand {
+    color: #000000; /* Adjust for brand color */
+}
+
+
+
+/*content */
+.background-home{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.circle-progress-value {
+    stroke-width: 6px;
+    stroke: #4CAF50;
+}
+.circle-progress-circle {
+    stroke-width: 6px;
+    stroke: #eee;
+}
+.circle-progress-text {
+    font-weight: bold;
+    fill: #333;
+}
+.circle-stat {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+.circle-stat-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.w-10{
+    width:7%!important
+}
+
+/* font */
+.chinnese {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.londrina-solid-thin {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.londrina-solid-light {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.londrina-solid-regular {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.londrina-solid-black {
+    font-family: "Londrina Solid", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.josefin-sans-ligth {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* logo */
+.logos-slide img{
+    height: 100px;
+    margin: 0 40px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    to {
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+}
+}
+.logos{
+    overflow: hidden;
+    padding: 60px 0 0 0;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+    -webkit-animation: 15s slide infinite linear;
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
