@@ -1,17 +1,7 @@
-
-function updateNumberInput() {
-    const slider = document.getElementById('numFields');
-    const numberInput = document.getElementById('numFieldsNumber');
-    numberInput.value = slider.value;  
-}
-function updateNumFieldsDisplay() {
-    const numFields = document.getElementById('numFields').value;
-    document.getElementById('numFieldsDisplay').textContent = numFields;
-}
 function generateFields() {
     const numFields = document.getElementById('numFields').value;
     const container = document.getElementById('fieldsContainer');
-    container.innerHTML = '';s
+    container.innerHTML = ''; // Clear existing fields
 
     for (let i = 1; i <= numFields; i++) {
         container.innerHTML += `
