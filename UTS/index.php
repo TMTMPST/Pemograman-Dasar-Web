@@ -231,9 +231,46 @@
         </div>
     </section>
 
+    <section id="comments" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Leave a Comment</h2>
+            <form action="comments.php" method="POST" class="mt-4">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="mb-3">
+                    <label for="comment" class="form-label">Your Comment</label>
+                    <textarea class="form-control" id="comment" name="comment" rows="3"
+                        placeholder="Your comment here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Comment</button>
+            </form>
+
+            <div class="mt-5">
+                <h2 class="text-center">Comments</h2>
+                <div class="comments-list">
+                    <?php
+                    // Retrieve the comments from the array
+                    if (isset($_POST['comments'])) {
+                        $comments = json_decode($_POST['comments'], true);
+                        foreach ($comments as $comment) {
+                            echo "<div class='comment-box mb-4 p-3 bg-light border'>";
+                            echo "<h5>{$comment['name']}</h5>";
+                            echo "<p>{$comment['comment']}</p>";
+                            echo "</div>";
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
