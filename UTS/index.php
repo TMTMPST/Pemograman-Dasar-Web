@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC:wght@400;700&family=Londrina+Solid:wght@100;300;400;900&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
     <title>It's Me Man 魏迪</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
@@ -55,9 +56,9 @@
             <div class="col-sm-6">
                 <h3 class="light-pink chinnese">欢迎来到我的网站</h3>
                 <h1 class="pink  fw-bold display-1 londrina-solid-regular">HELLO !</h1>
-                <p class="lead josefin-sans-ligth peach">
-                    I am Vidi Joshubzky Saviola, a passionate gamer striving to become a professional
-                    player in CS2 (Counter-Strike 2). My journey is fueled by a relentless drive to improve my skills,
+                <p class="lead josefin-sans-ligth peach ">
+                    I am <span class="highlight">Vidi Joshubzky Saviola</span>, a passionate gamer striving to become a professional
+                    player in <span class="highlight">CS2 (Counter-Strike 2)</span>. My journey is fueled by a relentless drive to improve my skills,
                     outsmart opponents, and rise through the competitive ranks. Dedication, strategy, and teamwork are
                     at the
                     core of everything I do, as I aim to make my mark in the world of esports.
@@ -78,7 +79,7 @@
             <h1 class="text-center londrina-solid-regular pink">ABOUT ME !!!</h1>
             <div class="josefin-sans-ligth lead">
                 <p>
-                    I’ve been immersed in the world of Counter-Strike since 2018, and my passion for the game has grown
+                    I’ve been immersed in the world of Counter-Strike since <span class="highlight">2018</span>, and my passion for the game has grown
                     exponentially over the years. What started as a casual interest has transformed into a dedicated
                     pursuit
                     of excellence, both as a player and a strategist.
@@ -107,39 +108,52 @@
     </section>
 
     <section id="achievements" class="py-5">
-        <div class="container londrina-solid-regular">
-            <h2 class="text-center">My Achievements</h2>
-            <div class="border border-dark mt-5 rounded-pill">
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
+        <div class="container mt-5">
+            <h1 class="text-center londrina-solid-regular pink">MY STATS</h1>
+            <br><br><br>
+            <div class="row">
+                <!-- HLTV Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
                             <div id="kd" class="circle-stat">
-                                <div class="circle-stat-value">0</div>
+                                <div class="circle-stat-value"></div>
                             </div>
-                            <p class="text-center mt-2">K/D</p>
+                            <h5 class="card-title mt-3"><span class="highlight josefin-sans-ligth">K/D</span></h5>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div id="hltv" class="circle-stat">
-                                <div class="circle-stat-value">0</div>
+                    </div>
+                </div>
+                <!-- Winrate Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="hltv" class="circle-stat  josefin-sans-ligth">
+                                <div class="circle-stat-value"></div>
                             </div>
-                            <p class="text-center mt-2">HLTV RATING</p>
+                            <h5 class="card-title mt-3"><span class="highlight josefin-sans-ligth">HLTV RATING</span></h5>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div id="winrate" class="circle-stat">
-                                <div class="circle-stat-value">0%</div>
+                    </div>
+                </div>
+                <!-- K/D Card -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="winrate" class="circle-stat josefin-sans-ligth">
+                                <div class="circle-stat-value"></div>
                             </div>
-                            <p class="text-center mt-2">WIN RATE</p>
+                            <h5 class="card-title mt-3 "><span class="highlight josefin-sans-ligth">WINRATE</span></h5>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 
     <section id="setup" class="py-5">
         <div class="container">
-            <h2 class="text-center londrina-solid-regular">My Gaming Setup</h2>
-            <table class="table table-bordered">
+            <h2 class="text-center londrina-solid-regular pink">My Setup</h2>
+            <table class="table table-bordered highlight josefin-sans-ligth">
                 <thead class="table-dark">
                     <tr>
                         <th>Component</th>
@@ -147,46 +161,38 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">CPU</th>
-                        <td>AMD Ryzen 7 5700X</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Mobo</th>
-                        <td>MSI MPG B550 GAMING PLUS - AM4</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">RAM</th>
-                        <td>TEAM T-Create Classic (2x8) 16GB DDR4 kit 3200MHz</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">GPU</th>
-                        <td>MSI GeForce RTX 3060 VENTUS 2X 12GB</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Monitor</th>
-                        <td>GigaByte G24F2 24</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Headset</th>
-                        <td>Logitech G Pro X</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Mouse</th>
-                        <td>Fantech Helios II</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Keyboard</th>
-                        <td>Noir N1X</td>
-                    </tr>
+                    <?php
+                    $gamingSetup = array(
+                        'CPU' => 'AMD Ryzen 7 5700X',
+                        'Mobo' => 'MSI MPG B550 GAMING PLUS - AM4',
+                        'RAM' => 'TEAM T-Create Classic (2x8) 16GB DDR4 kit 3200MHz',
+                        'GPU' => 'MSI GeForce RTX 3060 VENTUS 2X 12GB',
+                        'Monitor' => 'GigaByte G24F2 24',
+                        'Headset' => 'Logitech G Pro X',
+                        'Mouse' => 'Fantech Helios II',
+                        'Keyboard' => 'Noir N1X'
+                    );
+                    foreach ($gamingSetup as $component => $description) {
+                        echo "<tr>";
+                        echo "<th scope='row'>$component</th>";
+                        echo "<td>$description</td>";
+                        echo "</tr>";
+                    }
+                    ?>
             </table>
             </tbody>
             </table>
         </div>
     </section>
+    
+    <section>
+        <div class="container">
+            <h2 class="text-center londrina-solid-regular pink">Inventory</h2>
+            </div>
+    </section>
 
     <section id="another-games" class="py-5">
-        <h2 class="text-center londrina-solid-regular">Another Games I Play</h2>
+        <h2 class="text-center londrina-solid-regular pink">Another Games I Play</h2>
         <div class="logos">
             <div class="logos-slide">
                 <a href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/" target="_blank">
@@ -231,42 +237,27 @@
         </div>
     </section>
 
-    <section id="comments" class="py-5">
-        <div class="container">
-            <h2 class="text-center">Leave a Comment</h2>
-            <form action="comments.php" method="POST" class="mt-4">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Your Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="comment" class="form-label">Your Comment</label>
-                    <textarea class="form-control" id="comment" name="comment" rows="3"
-                        placeholder="Your comment here..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit Comment</button>
-            </form>
 
-            <div class="mt-5">
-                <h2 class="text-center">Comments</h2>
-                <div class="comments-list">
-                    <?php
-                    // Retrieve the comments from the array
-                    if (isset($_POST['comments'])) {
-                        $comments = json_decode($_POST['comments'], true);
-                        foreach ($comments as $comment) {
-                            echo "<div class='comment-box mb-4 p-3 bg-light border'>";
-                            echo "<h5>{$comment['name']}</h5>";
-                            echo "<p>{$comment['comment']}</p>";
-                            echo "</div>";
-                        }
-                    }
-                    ?>
-                </div>
+    <div class="container mt-5">
+        <h2 class="mb-4 londrina-solid-regular pink">Leave a Comment</h2>
+        <form id="commentForm" class="mb-4">
+            <div class="mb-3">
+                <label for="username" class="form-label josefin-sans-ligth lead">Name</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Your name" required>
             </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label josefin-sans-ligth lead">Comment</label>
+                <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Write a comment..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary josefin-sans-ligth lead">Submit Comment</button>
+        </form>
+        
+        <h3 class="mb-4 josefin-sans-ligth lead">Comments</h3>
+        <div id="commentSection" class="border p-3 josefin-sans-ligth lead">
+            <!-- Comments will be appended here -->
         </div>
-    </section>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

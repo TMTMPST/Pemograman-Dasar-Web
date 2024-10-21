@@ -18,3 +18,26 @@ $(document).ready(function() {
     initCircle('#hltv', 1.41, 1, value => value.toFixed(2));
     initCircle('#winrate', 0.49, 1, value => (value * 100).toFixed(0) + '%');
 });
+
+$(document).ready(function(){
+
+    loadComments();
+
+    $('#commentForm').on('submit', function(event) {
+        event.preventDefault();
+
+        var formData = $(this).serialize();
+
+        $.post('save_comment.php', formData, function(response) {
+            $('#commentForm')[0].reset();
+            loadComments();
+        });
+    });
+
+    function loadComments() {
+        $.get('load_comment.php', function(data) {
+            console.log(data);
+            $('#commentSection').html(data);
+        });
+    }
+});

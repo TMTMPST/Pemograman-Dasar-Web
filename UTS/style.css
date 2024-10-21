@@ -1,5 +1,5 @@
 .light-pink {
-    color: #FF6AC2;
+    color: #000000;
 }
 
 .pink {
@@ -70,11 +70,22 @@
     width:7%!important
 }
 
+.card-body {
+    text-align: center;
+}
+
+.card {
+    background-color: #fbf4ff;
+    border: transparent;
+    border-radius: 20px;
+}
+
 /* font */
 .chinnese {
-    font-family: "LXGW WenKai TC", cursive;
-    font-weight: 700;
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: 900;
     font-style: normal;
+    font-size: clamp(40px, 8vw, 70px);
 }
 
 .londrina-solid-thin {
@@ -108,6 +119,13 @@
     font-style: normal;
 }
 
+.highlight {
+    background: linear-gradient(
+        to bottom ,
+        transparent 50%,
+        #e7b9fe 50%
+    );
+}
 /* logo */
 .logos-slide img{
     height: 100px;
