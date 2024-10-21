@@ -40,10 +40,8 @@
                     <ul class="navbar-nav ms-auto londrina-solid-regular">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#achievements">achievements</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stat">Stats</a></li>
                         <li class="nav-item"><a class="nav-link" href="#setup">setup</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,12 +105,11 @@
         </div>
     </section>
 
-    <section id="achievements" class="py-5">
+    <section id="stat" class="py-5">
         <div class="container mt-5">
             <h1 class="text-center londrina-solid-regular pink">MY STATS</h1>
             <br><br><br>
             <div class="row">
-                <!-- HLTV Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
@@ -123,7 +120,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Winrate Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
@@ -134,7 +130,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- K/D Card -->
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
@@ -254,7 +249,6 @@
         
         <h3 class="mb-4 josefin-sans-ligth lead">Comments</h3>
         <div id="commentSection" class="border p-3 josefin-sans-ligth lead">
-            <!-- Comments will be appended here -->
         </div>
     </div>
 

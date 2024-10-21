@@ -1,3 +1,4 @@
+// Circles javascript
 $(document).ready(function() {
     function initCircle(id, value, max, format) {
         $(id).circleProgress({
@@ -19,6 +20,7 @@ $(document).ready(function() {
     initCircle('#winrate', 0.49, 1, value => (value * 100).toFixed(0) + '%');
 });
 
+// Comment Script
 $(document).ready(function(){
 
     loadComments();
