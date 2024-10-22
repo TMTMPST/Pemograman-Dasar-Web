@@ -20,16 +20,10 @@
 
 <body>
 
-    <!-- <section class="loader">
-        <p>Welcome to My Portfolio</p>
-
-        <div class="loading"></div>
-    </section> -->
-
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#home">
+                <a class="navbar-brand " href="#home">
                     <img src="./img/icon.png" alt="" class="w-10">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
