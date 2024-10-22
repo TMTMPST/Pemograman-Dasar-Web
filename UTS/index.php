@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=LXGW+WenKai+TC:wght@400;700&family=Londrina+Solid:wght@100;300;400;900&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap" rel="stylesheet">
     <title>It's Me Man 魏迪</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" />
@@ -49,8 +49,8 @@
                 <h3 class="light-pink chinnese">欢迎来到我的网站</h3>
                 <h1 class="pink  fw-bold display-1 londrina-solid-regular">HELLO !</h1>
                 <p class="lead josefin-sans-ligth peach ">
-                    I am <span class="highlight">Vidi Joshubzky Saviola</span>, a passionate gamer striving to become a professional
-                    player in <span class="highlight">CS2 (Counter-Strike 2)</span>. My journey is fueled by a relentless drive to improve my skills,
+                    I am Vidi Joshubzky Saviola, a passionate gamer striving to become a professional
+                    player in CS2 (Counter-Strike 2). My journey is fueled by a relentless drive to improve my skills,
                     outsmart opponents, and rise through the competitive ranks. Dedication, strategy, and teamwork are
                     at the
                     core of everything I do, as I aim to make my mark in the world of esports.
@@ -71,7 +71,8 @@
             <h1 class="text-center londrina-solid-regular pink">ABOUT ME !!!</h1>
             <div class="josefin-sans-ligth lead">
                 <p>
-                    I’ve been immersed in the world of Counter-Strike since <span class="highlight">2018</span>, and my passion for the game has grown
+                    I’ve been immersed in the world of Counter-Strike since <span class="highlight">2018</span>, and my
+                    passion for the game has grown
                     exponentially over the years. What started as a casual interest has transformed into a dedicated
                     pursuit
                     of excellence, both as a player and a strategist.
@@ -99,45 +100,31 @@
         </div>
     </section>
 
-    <section id="stat" class="py-5">
-        <div class="container mt-5">
-            <h1 class="text-center londrina-solid-regular pink">MY STATS</h1>
-            <br><br><br>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="kd" class="circle-stat">
-                                <div class="circle-stat-value"></div>
-                            </div>
-                            <h5 class="card-title mt-3"><span class="highlight josefin-sans-ligth">K/D</span></h5>
-                        </div>
-                    </div>
+    <section>
+        <div class="container">
+            <h2 class="text-center londrina-solid-regular pink my-4">Share Your Screenshot</h2>
+            
+            <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-images">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="hltv" class="circle-stat  josefin-sans-ligth">
-                                <div class="circle-stat-value"></div>
-                            </div>
-                            <h5 class="card-title mt-3"><span class="highlight josefin-sans-ligth">HLTV RATING</span></h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="winrate" class="circle-stat josefin-sans-ligth">
-                                <div class="circle-stat-value"></div>
-                            </div>
-                            <h5 class="card-title mt-3 "><span class="highlight josefin-sans-ligth">WINRATE</span></h5>
-                        </div>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
+            
+            <form id="uploadForm" enctype="multipart/form-data" class="mb-4">
+                <div class="mb-3">
+                    <input type="file" class="form-control" name="image" id="image" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Upload Image</button>
+            </form>
         </div>
     </section>
-
 
     <section id="setup" class="py-5">
         <div class="container">
@@ -172,12 +159,6 @@
             </tbody>
             </table>
         </div>
-    </section>
-    
-    <section>
-        <div class="container">
-            <h2 class="text-center londrina-solid-regular pink">Inventory</h2>
-            </div>
     </section>
 
     <section id="another-games" class="py-5">
@@ -236,11 +217,12 @@
             </div>
             <div class="mb-3">
                 <label for="comment" class="form-label josefin-sans-ligth lead">Comment</label>
-                <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Write a comment..." required></textarea>
+                <textarea class="form-control" id="comment" name="comment" rows="3" placeholder="Write a comment..."
+                    required></textarea>
             </div>
             <button type="submit" class="btn btn-primary josefin-sans-ligth lead">Submit Comment</button>
         </form>
-        
+
         <h3 class="mb-4 josefin-sans-ligth lead">Comments</h3>
         <div id="commentSection" class="border p-3 josefin-sans-ligth lead">
         </div>
@@ -249,7 +231,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
