@@ -6,11 +6,9 @@ if (isset($_POST['username']) && isset($_POST['comment'])) {
     $commentData =  $username . "\n " . $comment . "\n\n";
 
     if (file_put_contents('comments.txt', $commentData, FILE_APPEND)) {
-        echo "Comment saved successfully!";
+        echo "Comment Success";
     } else {
-        echo "Error saving comment.";
+        echo "Error";
     }
-} else {
-    echo "No data received.";
 }
 ?>

@@ -14,13 +14,8 @@ if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
     if (in_array($fileType, $allowedTypes)) {
         if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFilePath)) {
             echo $targetFilePath;
-        } else {
-            echo 0;
         }
-    } else {
-        echo 0;
     }
-} else {
-    echo 0;
 }
+
 ?>
