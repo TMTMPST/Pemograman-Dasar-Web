@@ -1,4 +1,3 @@
-// Comment Script
 $(document).ready(function () {
 
     loadComments();

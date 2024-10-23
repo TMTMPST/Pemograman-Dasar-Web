@@ -34,7 +34,7 @@
                     <ul class="navbar-nav ms-auto londrina-solid-regular">
                         <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#stat">Stats</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#SS">ScreenShot</a></li>
                         <li class="nav-item"><a class="nav-link" href="#setup">setup</a></li>
                     </ul>
                 </div>
@@ -100,7 +100,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="SS" class="py-5">
         <div class="container">
             <h2 class="text-center londrina-solid-regular pink my-4">Share Your Screenshot</h2>
             
